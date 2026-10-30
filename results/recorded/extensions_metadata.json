@@ -1,0 +1,8 @@
+{
+  "design": "Exploratory extension chosen after main results; durations fixed before extension execution",
+  "n_duration_cases": 1800,
+  "n_interval_checks": 30,
+  "n_independent_checks": 18,
+  "elapsed_s": 7.495670247999897,
+  "mpmath": "1.4.1"
+}

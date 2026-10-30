@@ -1,0 +1,43 @@
+[
+  {
+    "regime": "core",
+    "n": 450,
+    "cache_route": 0.6444444444444445,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 79.0594999671157,
+    "warm_us": 66.25000014537363,
+    "cold_us": 94.4574996992742,
+    "paired_warm_over_adaptive": 0.9935315760499954
+  },
+  {
+    "regime": "far",
+    "n": 450,
+    "cache_route": 0.7155555555555555,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 81.32750008371659,
+    "warm_us": 66.50550017184287,
+    "cold_us": 66.47100008194684,
+    "paired_warm_over_adaptive": 0.9957393161864703
+  },
+  {
+    "regime": "near",
+    "n": 450,
+    "cache_route": 0.0,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 113.83150012989063,
+    "warm_us": 96.39600011723815,
+    "cold_us": 128.93450002593454,
+    "paired_warm_over_adaptive": 0.990183604549444
+  },
+  {
+    "regime": "critical",
+    "n": 450,
+    "cache_route": 0.0,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 97.6974999957747,
+    "warm_us": 95.87499994268,
+    "cold_us": 188.153999943097,
+    "paired_warm_over_adaptive": 0.9870130908043155
+  }
+]
+Wrong heldout 0

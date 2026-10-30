@@ -1,0 +1,40 @@
+{
+  "seed": 202610290,
+  "sizes": [
+    6,
+    12,
+    24,
+    48,
+    96,
+    192
+  ],
+  "seeds_per_size": 10,
+  "n_cases": 3600,
+  "n_baselines": 240,
+  "levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "kinds": [
+    "weight",
+    "decay",
+    "order",
+    "joint",
+    "redistribute"
+  ],
+  "max_steps": 16,
+  "guard": 1e-10,
+  "h": 0.125,
+  "period": 4.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "elapsed_s": 19.16951105299995,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "numerical_scope": "Float64 CW inequalities with guard, NOT outward-rounded certification",
+  "design": "Fixed before new study run; pilot informed choices; core uncalibrated, stress groups calibrated; no seed filtering"
+}

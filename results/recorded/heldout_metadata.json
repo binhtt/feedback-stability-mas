@@ -1,0 +1,15 @@
+{
+  "seed": 202610300,
+  "n_cases": 1800,
+  "threshold": 0.1,
+  "sizes": [
+    12,
+    48,
+    192
+  ],
+  "reps": 10,
+  "timing_repeats": 3,
+  "gate": "abs(previous lambda)>=0.10 and update kind != order; cache then warm fallback",
+  "design": "Fixed after exploratory cache results, before independent-seed assessment; no candidate spectral result enters gate",
+  "elapsed_s": 14.965347158999975
+}

@@ -1,0 +1,276 @@
+Running study.py
+n=6: cases=600, elapsed=0.7s (size 0.7s)
+n=12: cases=1200, elapsed=1.5s (size 0.8s)
+n=24: cases=1800, elapsed=2.5s (size 1.0s)
+n=48: cases=2400, elapsed=3.8s (size 1.3s)
+n=96: cases=3000, elapsed=7.3s (size 3.4s)
+n=192: cases=3600, elapsed=18.9s (size 11.6s)
+{
+  "seed": 202610290,
+  "sizes": [
+    6,
+    12,
+    24,
+    48,
+    96,
+    192
+  ],
+  "seeds_per_size": 10,
+  "n_cases": 3600,
+  "n_baselines": 240,
+  "levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "kinds": [
+    "weight",
+    "decay",
+    "order",
+    "joint",
+    "redistribute"
+  ],
+  "max_steps": 16,
+  "guard": 1e-10,
+  "h": 0.125,
+  "period": 4.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "elapsed_s": 19.16951105299995,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "numerical_scope": "Float64 CW inequalities with guard, NOT outward-rounded certification",
+  "design": "Fixed before new study run; pilot informed choices; core uncalibrated, stress groups calibrated; no seed filtering"
+}
+Running extensions.py
+duration 0.005 rows 450
+duration 0.025 rows 900
+duration 0.125 rows 1350
+duration 0.5 rows 1800
+DONE 1800 30 18
+Running test_checks.py
+Passed 5 edge checks
+Running cache_screen.py
+Cache cases 3600 elapsed 7.301316705999852
+core resolved 0.78
+far resolved 0.7377777777777778
+near resolved 0.19555555555555557
+critical resolved 0.15
+Running heldout.py
+12 600 elapsed 1.4151860339998166
+48 1200 elapsed 3.1402038689998335
+192 1800 elapsed 14.869590666000022
+Running analyze.py
+Main cases 3600 extension 1800 wrong main 0
+ONE PASS [
+  {
+    "regime": "core",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.9522222222222222,
+    "cold_rate": 0.7511111111111111,
+    "difference": 0.20111111111111113,
+    "paired_cluster_ci_low": 0.11666666666666667,
+    "paired_cluster_ci_high": 0.2922222222222222
+  },
+  {
+    "regime": "far",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 1.0,
+    "cold_rate": 1.0,
+    "difference": 0.0,
+    "paired_cluster_ci_low": 0.0,
+    "paired_cluster_ci_high": 0.0
+  },
+  {
+    "regime": "near",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.5444444444444444,
+    "cold_rate": 0.1,
+    "difference": 0.4444444444444444,
+    "paired_cluster_ci_low": 0.43222222222222223,
+    "paired_cluster_ci_high": 0.4555555555555556
+  },
+  {
+    "regime": "critical",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.56,
+    "cold_rate": 0.09333333333333334,
+    "difference": 0.46666666666666673,
+    "paired_cluster_ci_low": 0.4433055555555555,
+    "paired_cluster_ci_high": 0.48777777777777775
+  }
+]
+TIMING [
+  {
+    "n": 6,
+    "n_scenarios": 9,
+    "dense_ms": 0.14971700011301436,
+    "warm_ms": 0.12619000017366488,
+    "cold_ms": 0.1268679998247535,
+    "arpack_ms": 0.6495160000667966,
+    "median_paired_dense_over_warm": 1.1895309404860763,
+    "median_paired_cold_over_warm": 1.0996249385312418,
+    "max_arpack_error": 9.992007221626409e-16
+  },
+  {
+    "n": 12,
+    "n_scenarios": 9,
+    "dense_ms": 0.183223000021826,
+    "warm_ms": 0.12955000011061202,
+    "cold_ms": 0.13684599980479106,
+    "arpack_ms": 1.2752699999509787,
+    "median_paired_dense_over_warm": 1.4086759183796742,
+    "median_paired_cold_over_warm": 1.0563180215202592,
+    "max_arpack_error": 1.4432899320127035e-15
+  },
+  {
+    "n": 24,
+    "n_scenarios": 9,
+    "dense_ms": 0.2515500000299653,
+    "warm_ms": 0.1333780001004925,
+    "cold_ms": 0.14118099988991162,
+    "arpack_ms": 1.6855630001373356,
+    "median_paired_dense_over_warm": 1.8767346093529889,
+    "median_paired_cold_over_warm": 1.0664899982126381,
+    "max_arpack_error": 1.5543122344752192e-15
+  },
+  {
+    "n": 48,
+    "n_scenarios": 9,
+    "dense_ms": 0.5963409998912539,
+    "warm_ms": 0.14768499977435567,
+    "cold_ms": 0.15083900007084594,
+    "arpack_ms": 1.7542320001666667,
+    "median_paired_dense_over_warm": 4.205991108204436,
+    "median_paired_cold_over_warm": 0.9999868339289758,
+    "max_arpack_error": 1.1102230246251565e-15
+  },
+  {
+    "n": 96,
+    "n_scenarios": 9,
+    "dense_ms": 3.209039000012126,
+    "warm_ms": 0.17559099978825543,
+    "cold_ms": 0.18331599994780845,
+    "arpack_ms": 2.0627399999284535,
+    "median_paired_dense_over_warm": 17.887608426462027,
+    "median_paired_cold_over_warm": 1.0219601241132321,
+    "max_arpack_error": 1.2212453270876722e-15
+  },
+  {
+    "n": 192,
+    "n_scenarios": 9,
+    "dense_ms": 13.664274999882764,
+    "warm_ms": 0.24510299999747076,
+    "cold_ms": 0.2330199999960314,
+    "arpack_ms": 2.3697780002294166,
+    "median_paired_dense_over_warm": 59.320704359397745,
+    "median_paired_cold_over_warm": 0.9126774818605363,
+    "max_arpack_error": 5.551115123125783e-16
+  }
+]
+DURATION [
+  {
+    "h": 0.005,
+    "period": 0.16,
+    "n": 450,
+    "warm1": 0.44222222222222224,
+    "cold1": 0.0,
+    "warm16": 0.8444444444444444,
+    "cold16": 0.3333333333333333,
+    "warm_steps": 6.3133333333333335,
+    "cold_steps": 11.748888888888889,
+    "difference_ci_low": 0.5022222222222221,
+    "difference_ci_high": 0.52
+  },
+  {
+    "h": 0.025,
+    "period": 0.8,
+    "n": 450,
+    "warm1": 0.4533333333333333,
+    "cold1": 0.08222222222222222,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 2.482222222222222,
+    "cold_steps": 4.866666666666666,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  },
+  {
+    "h": 0.125,
+    "period": 4.0,
+    "n": 450,
+    "warm1": 0.6844444444444444,
+    "cold1": 0.4066666666666667,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 1.3511111111111112,
+    "cold_steps": 1.8,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  },
+  {
+    "h": 0.5,
+    "period": 16.0,
+    "n": 450,
+    "warm1": 0.8111111111111111,
+    "cold1": 0.4488888888888889,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 1.1888888888888889,
+    "cold_steps": 1.551111111111111,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  }
+]
+Running summarize_extra.py
+[
+  {
+    "regime": "core",
+    "n": 450,
+    "cache_route": 0.6444444444444445,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 98.84099995360884,
+    "warm_us": 77.32349990874354,
+    "cold_us": 104.34300020278897,
+    "paired_warm_over_adaptive": 0.9589288639084388
+  },
+  {
+    "regime": "far",
+    "n": 450,
+    "cache_route": 0.7155555555555555,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 95.48449997964781,
+    "warm_us": 72.70850005625107,
+    "cold_us": 70.54050001897849,
+    "paired_warm_over_adaptive": 0.9200560839026837
+  },
+  {
+    "regime": "near",
+    "n": 450,
+    "cache_route": 0.0,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 122.01350000395905,
+    "warm_us": 116.49900011434511,
+    "cold_us": 139.1439998315036,
+    "paired_warm_over_adaptive": 0.9777077821819987
+  },
+  {
+    "regime": "critical",
+    "n": 450,
+    "cache_route": 0.0,
+    "adaptive_resolved": 1.0,
+    "adaptive_us": 119.20699989786954,
+    "warm_us": 113.8350003202504,
+    "cold_us": 198.7869998174574,
+    "paired_warm_over_adaptive": 0.9771625048788404
+  }
+]
+Wrong heldout 0
+All stages completed.

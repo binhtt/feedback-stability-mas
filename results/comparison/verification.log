@@ -1,0 +1,65 @@
+{
+  "all_comparisons_passed": true,
+  "checks": [
+    [
+      "cases.csv",
+      true
+    ],
+    [
+      "duration_sensitivity.csv",
+      true
+    ],
+    [
+      "heldout_cases.csv",
+      true
+    ],
+    [
+      "cache_cases.csv",
+      true
+    ],
+    [
+      "resolution_summary.csv",
+      true
+    ],
+    [
+      "duration_summary.csv",
+      true
+    ],
+    [
+      "cache_summary.csv",
+      true
+    ],
+    [
+      "configs.json",
+      true
+    ],
+    [
+      "heldout_configs.json",
+      true
+    ],
+    [
+      "edge_checks.json",
+      true
+    ],
+    [
+      "interval_checks.json",
+      true
+    ]
+  ],
+  "verdict_errors": {
+    "cases.csv": {
+      "warm": 0,
+      "cold": 0
+    },
+    "heldout_cases.csv": {
+      "warm": 0,
+      "cold": 0,
+      "adaptive": 0
+    },
+    "duration_sensitivity.csv": {
+      "warm": 0,
+      "cold": 0
+    }
+  },
+  "original_manifest_mismatches": []
+}

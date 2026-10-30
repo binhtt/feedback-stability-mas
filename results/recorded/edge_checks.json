@@ -1,0 +1,28 @@
+[
+  {
+    "test": "diagonal_or_exact_boundary",
+    "rho": 0.99,
+    "expected": -1,
+    "actual": -1
+  },
+  {
+    "test": "diagonal_or_exact_boundary",
+    "rho": 1.0,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "test": "diagonal_or_exact_boundary",
+    "rho": 1.01,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "test": "positive_vector_scaling",
+    "passed": true
+  },
+  {
+    "test": "coupling_monotonicity",
+    "passed": true
+  }
+]

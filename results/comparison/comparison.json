@@ -1,0 +1,453 @@
+{
+  "all_comparisons_passed": true,
+  "comparison_tolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-12
+  },
+  "checks": [
+    {
+      "file": "cases.csv",
+      "rows": 3600,
+      "fields": [
+        "n",
+        "rep",
+        "regime",
+        "kind",
+        "level",
+        "beta",
+        "lambda_old",
+        "lambda_new",
+        "truth",
+        "stable_to_unstable",
+        "warm_verdict",
+        "warm_steps",
+        "warm_lo",
+        "warm_hi",
+        "warm_resolved_1",
+        "warm_resolved_2",
+        "warm_resolved_4",
+        "warm_resolved_8",
+        "warm_resolved_16",
+        "cold_verdict",
+        "cold_steps",
+        "cold_lo",
+        "cold_hi",
+        "cold_resolved_1",
+        "cold_resolved_2",
+        "cold_resolved_4",
+        "cold_resolved_8",
+        "cold_resolved_16"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "duration_sensitivity.csv",
+      "rows": 1800,
+      "fields": [
+        "n",
+        "rep",
+        "h",
+        "period",
+        "target",
+        "lambda_old",
+        "calibration_error",
+        "kind",
+        "level",
+        "lambda_new",
+        "warm_verdict",
+        "warm_steps",
+        "warm_resolved_1",
+        "warm_resolved_2",
+        "warm_resolved_4",
+        "warm_resolved_8",
+        "warm_resolved_16",
+        "cold_verdict",
+        "cold_steps",
+        "cold_resolved_1",
+        "cold_resolved_2",
+        "cold_resolved_4",
+        "cold_resolved_8",
+        "cold_resolved_16"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "heldout_cases.csv",
+      "rows": 1800,
+      "fields": [
+        "n",
+        "rep",
+        "regime",
+        "kind",
+        "level",
+        "lambda_old",
+        "lambda_new",
+        "truth",
+        "route",
+        "adaptive_verdict",
+        "adaptive_steps",
+        "warm_verdict",
+        "warm_steps",
+        "cold_verdict",
+        "cold_steps"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "cache_cases.csv",
+      "rows": 3600,
+      "fields": [
+        "n",
+        "rep",
+        "regime",
+        "kind",
+        "level",
+        "cache_verdict",
+        "cache_lo",
+        "cache_hi"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "resolution_summary.csv",
+      "rows": 20,
+      "fields": [
+        "regime",
+        "budget",
+        "n",
+        "warm_rate",
+        "cold_rate",
+        "difference",
+        "paired_cluster_ci_low",
+        "paired_cluster_ci_high"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "duration_summary.csv",
+      "rows": 4,
+      "fields": [
+        "h",
+        "period",
+        "n",
+        "warm1",
+        "cold1",
+        "warm16",
+        "cold16",
+        "warm_steps",
+        "cold_steps",
+        "difference_ci_low",
+        "difference_ci_high"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "cache_summary.csv",
+      "rows": 4,
+      "fields": [
+        "regime",
+        "n",
+        "cache_resolved"
+      ],
+      "differences": [],
+      "passed": true
+    },
+    {
+      "file": "configs.json",
+      "exact_json_match": true,
+      "passed": true
+    },
+    {
+      "file": "heldout_configs.json",
+      "exact_json_match": true,
+      "passed": true
+    },
+    {
+      "file": "edge_checks.json",
+      "exact_json_match": true,
+      "passed": true
+    },
+    {
+      "file": "interval_checks.json",
+      "exact_json_match": true,
+      "passed": true
+    }
+  ],
+  "decisive_verdict_errors": {
+    "cases.csv": {
+      "warm": 0,
+      "cold": 0
+    },
+    "heldout_cases.csv": {
+      "warm": 0,
+      "cold": 0,
+      "adaptive": 0
+    },
+    "duration_sensitivity.csv": {
+      "warm": 0,
+      "cold": 0
+    }
+  },
+  "timings": [
+    {
+      "table": "timing_summary.csv",
+      "group": "6",
+      "metric": "dense_ms",
+      "recorded": 0.14971700011301436,
+      "rerun": 0.12831399999413406
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "6",
+      "metric": "warm_ms",
+      "recorded": 0.12619000017366488,
+      "rerun": 0.11441300011938438
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "6",
+      "metric": "cold_ms",
+      "recorded": 0.1268679998247535,
+      "rerun": 0.11753799981306656
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "6",
+      "metric": "arpack_ms",
+      "recorded": 0.6495160000667966,
+      "rerun": 0.5195139997340448
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "12",
+      "metric": "dense_ms",
+      "recorded": 0.183223000021826,
+      "rerun": 0.1419649997842498
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "12",
+      "metric": "warm_ms",
+      "recorded": 0.12955000011061202,
+      "rerun": 0.11795799991887179
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "12",
+      "metric": "cold_ms",
+      "recorded": 0.13684599980479106,
+      "rerun": 0.12156399998275447
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "12",
+      "metric": "arpack_ms",
+      "recorded": 1.2752699999509787,
+      "rerun": 0.9229329998561298
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "24",
+      "metric": "dense_ms",
+      "recorded": 0.2515500000299653,
+      "rerun": 0.2127110001310939
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "24",
+      "metric": "warm_ms",
+      "recorded": 0.1333780001004925,
+      "rerun": 0.12406699988787295
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "24",
+      "metric": "cold_ms",
+      "recorded": 0.14118099988991162,
+      "rerun": 0.12573899994094972
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "24",
+      "metric": "arpack_ms",
+      "recorded": 1.6855630001373356,
+      "rerun": 1.5172089997577132
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "48",
+      "metric": "dense_ms",
+      "recorded": 0.5963409998912539,
+      "rerun": 0.4846319998250692
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "48",
+      "metric": "warm_ms",
+      "recorded": 0.14768499977435567,
+      "rerun": 0.1339820000794134
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "48",
+      "metric": "cold_ms",
+      "recorded": 0.15083900007084594,
+      "rerun": 0.1346129997727985
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "48",
+      "metric": "arpack_ms",
+      "recorded": 1.7542320001666667,
+      "rerun": 1.4767889997528982
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "96",
+      "metric": "dense_ms",
+      "recorded": 3.209039000012126,
+      "rerun": 2.2957839996706753
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "96",
+      "metric": "warm_ms",
+      "recorded": 0.17559099978825543,
+      "rerun": 0.15842899983908865
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "96",
+      "metric": "cold_ms",
+      "recorded": 0.18331599994780845,
+      "rerun": 0.15544500001851702
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "96",
+      "metric": "arpack_ms",
+      "recorded": 2.0627399999284535,
+      "rerun": 1.5833600000405568
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "192",
+      "metric": "dense_ms",
+      "recorded": 13.664274999882764,
+      "rerun": 10.46693599982973
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "192",
+      "metric": "warm_ms",
+      "recorded": 0.24510299999747076,
+      "rerun": 0.21925100008957088
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "192",
+      "metric": "cold_ms",
+      "recorded": 0.2330199999960314,
+      "rerun": 0.20074300027772551
+    },
+    {
+      "table": "timing_summary.csv",
+      "group": "192",
+      "metric": "arpack_ms",
+      "recorded": 2.3697780002294166,
+      "rerun": 1.912905999688519
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "core",
+      "metric": "adaptive_us",
+      "recorded": 98.84099995360884,
+      "rerun": 79.0594999671157
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "core",
+      "metric": "warm_us",
+      "recorded": 77.32349990874354,
+      "rerun": 66.25000014537363
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "core",
+      "metric": "cold_us",
+      "recorded": 104.34300020278897,
+      "rerun": 94.4574996992742
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "far",
+      "metric": "adaptive_us",
+      "recorded": 95.48449997964781,
+      "rerun": 81.32750008371659
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "far",
+      "metric": "warm_us",
+      "recorded": 72.70850005625107,
+      "rerun": 66.50550017184287
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "far",
+      "metric": "cold_us",
+      "recorded": 70.54050001897849,
+      "rerun": 66.47100008194684
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "near",
+      "metric": "adaptive_us",
+      "recorded": 122.01350000395905,
+      "rerun": 113.83150012989063
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "near",
+      "metric": "warm_us",
+      "recorded": 116.49900011434511,
+      "rerun": 96.39600011723815
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "near",
+      "metric": "cold_us",
+      "recorded": 139.1439998315036,
+      "rerun": 128.93450002593454
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "critical",
+      "metric": "adaptive_us",
+      "recorded": 119.20699989786954,
+      "rerun": 97.6974999957747
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "critical",
+      "metric": "warm_us",
+      "recorded": 113.8350003202504,
+      "rerun": 95.87499994268
+    },
+    {
+      "table": "heldout_summary.csv",
+      "group": "critical",
+      "metric": "cold_us",
+      "recorded": 198.7869998174574,
+      "rerun": 188.153999943097
+    }
+  ],
+  "original_manifest_mismatches": [],
+  "timing_note": "Timings are measured, not expected to reproduce exactly. Recorded results remain unchanged."
+}

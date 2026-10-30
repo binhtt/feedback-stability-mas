@@ -1,0 +1,46 @@
+n=6: cases=600, elapsed=0.8s (size 0.8s)
+n=12: cases=1200, elapsed=1.5s (size 0.7s)
+n=24: cases=1800, elapsed=2.4s (size 0.9s)
+n=48: cases=2400, elapsed=3.8s (size 1.3s)
+n=96: cases=3000, elapsed=7.1s (size 3.4s)
+n=192: cases=3600, elapsed=18.0s (size 10.8s)
+{
+  "seed": 202610290,
+  "sizes": [
+    6,
+    12,
+    24,
+    48,
+    96,
+    192
+  ],
+  "seeds_per_size": 10,
+  "n_cases": 3600,
+  "n_baselines": 240,
+  "levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "kinds": [
+    "weight",
+    "decay",
+    "order",
+    "joint",
+    "redistribute"
+  ],
+  "max_steps": 16,
+  "guard": 1e-10,
+  "h": 0.125,
+  "period": 4.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "elapsed_s": 18.07807256399974,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "numerical_scope": "Float64 CW inequalities with guard, NOT outward-rounded certification",
+  "design": "Fixed before new study run; pilot informed choices; core uncalibrated, stress groups calibrated; no seed filtering"
+}

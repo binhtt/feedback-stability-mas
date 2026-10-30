@@ -1,0 +1,7 @@
+{
+  "design": "Exploratory algorithm extension after main CW and duration studies; all main candidates retained",
+  "n_cases": 3600,
+  "n_timing_cases": 54,
+  "elapsed_s": 3.808034095000039,
+  "scope": "float64 comparison bounds with guard; no interval validation of this layer yet"
+}

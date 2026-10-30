@@ -1,0 +1,165 @@
+Main cases 3600 extension 1800 wrong main 0
+ONE PASS [
+  {
+    "regime": "core",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.9522222222222222,
+    "cold_rate": 0.7511111111111111,
+    "difference": 0.20111111111111113,
+    "paired_cluster_ci_low": 0.11666666666666667,
+    "paired_cluster_ci_high": 0.2922222222222222
+  },
+  {
+    "regime": "far",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 1.0,
+    "cold_rate": 1.0,
+    "difference": 0.0,
+    "paired_cluster_ci_low": 0.0,
+    "paired_cluster_ci_high": 0.0
+  },
+  {
+    "regime": "near",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.5444444444444444,
+    "cold_rate": 0.1,
+    "difference": 0.4444444444444444,
+    "paired_cluster_ci_low": 0.43222222222222223,
+    "paired_cluster_ci_high": 0.4555555555555556
+  },
+  {
+    "regime": "critical",
+    "budget": 1,
+    "n": 900,
+    "warm_rate": 0.56,
+    "cold_rate": 0.09333333333333334,
+    "difference": 0.46666666666666673,
+    "paired_cluster_ci_low": 0.4433055555555555,
+    "paired_cluster_ci_high": 0.48777777777777775
+  }
+]
+TIMING [
+  {
+    "n": 6,
+    "n_scenarios": 9,
+    "dense_ms": 0.1409699998475844,
+    "warm_ms": 0.12202600009914022,
+    "cold_ms": 0.13966599999548635,
+    "arpack_ms": 0.6235020000531222,
+    "median_paired_dense_over_warm": 1.1897090077225279,
+    "median_paired_cold_over_warm": 1.2411303120036394,
+    "max_arpack_error": 9.992007221626409e-16
+  },
+  {
+    "n": 12,
+    "n_scenarios": 9,
+    "dense_ms": 0.159221000103571,
+    "warm_ms": 0.12467900023693801,
+    "cold_ms": 0.1257159997294366,
+    "arpack_ms": 1.0594089999358403,
+    "median_paired_dense_over_warm": 1.282592235146126,
+    "median_paired_cold_over_warm": 1.0083173548915847,
+    "max_arpack_error": 1.4432899320127035e-15
+  },
+  {
+    "n": 24,
+    "n_scenarios": 9,
+    "dense_ms": 0.28095300012864755,
+    "warm_ms": 0.13589699983640458,
+    "cold_ms": 0.14815399981671362,
+    "arpack_ms": 1.9352169997546298,
+    "median_paired_dense_over_warm": 1.8527469793697673,
+    "median_paired_cold_over_warm": 0.9816406989850617,
+    "max_arpack_error": 1.5543122344752192e-15
+  },
+  {
+    "n": 48,
+    "n_scenarios": 9,
+    "dense_ms": 0.6048139998711122,
+    "warm_ms": 0.14747699970030226,
+    "cold_ms": 0.15006700004960294,
+    "arpack_ms": 1.7474830001447117,
+    "median_paired_dense_over_warm": 4.17317306692495,
+    "median_paired_cold_over_warm": 1.0496280812145224,
+    "max_arpack_error": 1.1102230246251565e-15
+  },
+  {
+    "n": 96,
+    "n_scenarios": 9,
+    "dense_ms": 3.126521000012872,
+    "warm_ms": 0.1745370000207913,
+    "cold_ms": 0.16684799993527122,
+    "arpack_ms": 1.8417599999338563,
+    "median_paired_dense_over_warm": 17.595496061428094,
+    "median_paired_cold_over_warm": 0.945323913945315,
+    "max_arpack_error": 1.2212453270876722e-15
+  },
+  {
+    "n": 192,
+    "n_scenarios": 9,
+    "dense_ms": 12.678197000241198,
+    "warm_ms": 0.23969899984876974,
+    "cold_ms": 0.22398400005840813,
+    "arpack_ms": 2.230732999578322,
+    "median_paired_dense_over_warm": 52.73948020727407,
+    "median_paired_cold_over_warm": 0.9419403676846232,
+    "max_arpack_error": 5.551115123125783e-16
+  }
+]
+DURATION [
+  {
+    "h": 0.005,
+    "period": 0.16,
+    "n": 450,
+    "warm1": 0.44222222222222224,
+    "cold1": 0.0,
+    "warm16": 0.8444444444444444,
+    "cold16": 0.3333333333333333,
+    "warm_steps": 6.3133333333333335,
+    "cold_steps": 11.748888888888889,
+    "difference_ci_low": 0.5022222222222221,
+    "difference_ci_high": 0.52
+  },
+  {
+    "h": 0.025,
+    "period": 0.8,
+    "n": 450,
+    "warm1": 0.4533333333333333,
+    "cold1": 0.08222222222222222,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 2.482222222222222,
+    "cold_steps": 4.866666666666666,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  },
+  {
+    "h": 0.125,
+    "period": 4.0,
+    "n": 450,
+    "warm1": 0.6844444444444444,
+    "cold1": 0.4066666666666667,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 1.3511111111111112,
+    "cold_steps": 1.8,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  },
+  {
+    "h": 0.5,
+    "period": 16.0,
+    "n": 450,
+    "warm1": 0.8111111111111111,
+    "cold1": 0.4488888888888889,
+    "warm16": 1.0,
+    "cold16": 1.0,
+    "warm_steps": 1.1888888888888889,
+    "cold_steps": 1.551111111111111,
+    "difference_ci_low": 0.0,
+    "difference_ci_high": 0.0
+  }
+]

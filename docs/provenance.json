@@ -1,0 +1,8 @@
+{
+  "source_archive_sha256": "a8cd10f02aea5229c3d7d83dce0b60716e993d46c2c10a22527209f3418c33a8",
+  "verification_date": "2026-10-30",
+  "original_scientific_code_unmodified": true,
+  "recorded_results": "results/recorded",
+  "rerun_results": "results/verified-rerun",
+  "comparison": "results/comparison/comparison.json"
+}
